@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('photo1.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            color: #ff92a1;
+            font-size: 4rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+            animation: pulse 3s infinite;
+        }
+
+        .love-letter {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 1.3rem;
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+        }
+
+        .love-letter::after {
+            content: "💌";
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            background: #ff92a1;
+            color: #fff;
+            font-size: 2rem;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.8;
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .love-letter {
+                font-size: 1.1rem;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>For My Love ❤️✨</h1>
+    <div class="love-letter">
+        Dear Ihssane,<br><br>
+        Every moment with you feels like a dream come true. 🌟 You light up my life with your smile, and my heart is
+        forever grateful for your love. ❤️ This is a little something to remind you of how special you are to me. 🥰<br><br>
+        With all my love,<br>
+        💕 Hakim 💕
+    </div>
+</body>
+
+</html>
